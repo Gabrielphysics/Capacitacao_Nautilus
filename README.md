@@ -30,26 +30,26 @@
 
         Para descrever os AUVs e suas possíveis funções e relações entre si, o modelo criado em **Aula_python_POO.py** segue a seguinte estrutura:
         
-        * ### Objeto **Veiculo_Autonomo**
+        * ### Objeto **VeiculoAutonomo**
 
-            Um Objeto **Veiculo_Autonomo** é criado com as propriedades descritas nos requerimentos, ou seja, contém nome, quantidade de thrusters lista de sensores, as dimensões do veículo, ano de construção e classificação nos testes (parâmetro acrescentado por mim, pensando em prováveis avaliações quantitativas que um veículo poderia passar para fins de análise e desempenho)
+            Um Objeto **VeiculoAutonomo** é criado com as propriedades descritas nos requerimentos, ou seja, contém nome, quantidade de thrusters lista de sensores, as dimensões do veículo, ano de construção e classificação nos testes (parâmetro acrescentado por mim, pensando em prováveis avaliações quantitativas que um veículo poderia passar para fins de análise e desempenho)
 
-            Este objeto criado está conectado, através de uma hierarquia, ao objeto **AUVs** que é responsável por estabelecer as relações entre todos os objetos **Veiculo_Autonomo** criados.
+            Este objeto criado está conectado, através de uma hierarquia, ao objeto **AUVs** que é responsável por estabelecer as relações entre todos os objetos **VeiculoAutonomo** criados.
 
-            Esta relação é possível pois **AUVs** guarda **Veiculo_Autonomo** dentro do vetor/atributo **veiculos_registrados** podendo ser acessado quando for necessário.
+            Esta relação é possível, pois **AUVs** guarda **VeiculoAutonomo** dentro do vetor/atributo **veiculos_registrados** podendo ser acessado quando for necessário.
 
-        Obs: Optei por desenvolver de forma hierárquica, pois se os métodos fossem criados em um único objeto, necessariamente deveria criar-se um novo **Veiculo_Autonomo** passando todos os parâmetros novamente, mesmo se fossem vazios. Com isto em mente uma instância **AUVs** pode facilmente analisar e exercer uma visualização geral de forma mais prática.
+        Obs: Optei por desenvolver de forma hierárquica, porque se os métodos fossem criados em um único objeto, necessariamente deveria criar-se um novo **VeiculoAutonomo** passando todos os parâmetros novamente, mesmo caso fossem vazios. Com isto em mente uma instância **AUVs** pode facilmente analisar e exercer uma visualização geral de forma mais prática.
 
         * ### Objeto **AUVs**
 
-            Um Objeto **AUVs** pode ser criado em qualquer etapa do codigo e tem como principal função analisar e visualizar os **Veiculo_Autonomo**s criados, logo não possui parâmetros de inicialização.
+            Um Objeto **AUVs** pode ser criado em qualquer etapa do código e tem como principal função analisar e visualizar os **VeiculoAutonomo**s criados, logo não possui parâmetros de inicialização.
 
             Métodos:
 
-                AUVs.Exibir_Todos() -> 'str'
+                AUVs.Exibir_Todos(veiculos:'list[object]' = veiculos_registrados) -> 'str'
                 '''Exibe todos os AUVs em formato tabela'''
 
-            Percorre a lista de veículos passada como parâmetro montando-os em formato tabela-string. No primeiro momento o método busca as chaves encontradas no primeiro objeto da lista e as coloca em posição de cabeçalho da tabela e após esta etapa ele busca os valores de cada objeto formatado diretamente como texto ou aplicando o método **.join** para formatar uma lista.
+            Percorre a lista de veículos passada como parâmetro montando-os em formato tabela-string. No primeiro momento o método busca as chaves encontradas no primeiro objeto da lista e as coloca em posição de cabeçalho da tabela, após esta etapa ele busca os valores de cada objeto formatando diretamente como texto ou aplicando o método **.join** para formatar uma lista.
 
                 AUVs.Detalhar_AUV( nome:'str' ) -> 'dict | str'
                 '''Exibe os robôs individualmente'''
@@ -69,4 +69,4 @@
                 AUVs.Atualizar_AUVs(veiculo:'object')
                 '''Atualiza a lista de veículos registrados'''
             
-            Acrescenta um novo objeto **Veiculo_Autonomo** na lista **veiculos_registrados**.
+            Acrescenta um novo objeto **VeiculoAutonomo** na lista **veiculos_registrados**.
