@@ -70,3 +70,22 @@
                 '''Atualiza a lista de veículos registrados'''
             
             Acrescenta um novo objeto **VeiculoAutonomo** na lista **veiculos_registrados**.
+
+# Aula_Nautilus_ROS_Basico
+
+* ## Entregável da aula de ROS básico.
+
+    1. ### "Implemente um modelo que descreva os AUVs da UFRJ Nautilus"
+        * ### Arquivo **velocidade.py**
+            Dentro deste modulo possui um Objeto chamado **Velocidade**, ele é o responsavel por publicar no topico "velocidade" os valores referentes a velocidade do AUV.
+            * Utilizando **Twist** foi possivel definir tanto a velocidade angular como linear com um unico objeto.
+            * Utilizei o modulo **random** para gerar  numeros aleatórios dentro do range especificado.
+
+        * ### Arquivo **mod_velocidade**
+            Dentro deste modulo possui um Objeto chamado **ModularVelocidade** responsavel pela coleta de valores publicados no topico "velocidade"  e também por executar o calculo correspondente ao modulo de um vetor:
+            $$
+                f(x,y,z) =  \sqrt(x²+y²+z²)
+            $$
+            * Utilizei a biblioteca math para efetuar a operação.
+            * O código publica o valor em formato Float64 em dois tópicos diferentes, a saber "modulo_angular" e "modulo_linear".
+
