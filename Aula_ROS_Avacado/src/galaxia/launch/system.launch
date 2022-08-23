@@ -2,5 +2,5 @@
 <launch>
     <rosparam  command="load" file="$(find galaxia)/param/solar_system.yaml"/>
     
-    <node  name="rosparam" pkg="galaxia" type="rosparam.py"> </node>
+    <node  name="rosparam" pkg="galaxia" type="TimeSpace.py"> </node>
 </launch>
