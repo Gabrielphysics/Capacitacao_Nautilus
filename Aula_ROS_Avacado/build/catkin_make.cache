@@ -1,0 +1,2 @@
+
+-DCATKIN_DEVEL_PREFIX=/root/Aulas Nautilus/Aula_ROS_Avacado/devel -DCMAKE_INSTALL_PREFIX=/root/Aulas Nautilus/Aula_ROS_Avacado/install -G Unix Makefiles

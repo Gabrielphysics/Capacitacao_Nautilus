@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<launch>
+    <rosparam  command="load" file="$(find galaxia)/param/solar_system.yaml"/>
+    
+    <node  name="rosparam" pkg="galaxia" type="rosparam.py"> </node>
+</launch>

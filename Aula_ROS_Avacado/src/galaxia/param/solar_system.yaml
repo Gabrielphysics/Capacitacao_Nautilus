@@ -1,0 +1,53 @@
+sistema:
+    sol:
+        id: 'Sol'
+        raio: 0
+        velocidade: 0
+
+    Venus:
+        id: 'Venus'
+        raio: 2
+        referencia: 'Sol'
+        velocidade: 2
+
+    terra:
+        id: 'Terra'
+        raio: 3
+        referencia: 'Sol'
+        velocidade: 1
+
+    lua: 
+        id: 'Lua'
+        raio: 0.3
+        referencia: 'Terra'
+        velocidade: 12
+
+    Marte: 
+        id: 'Marte'
+        raio: 4
+        referencia: 'Sol'
+        velocidade: 0.53
+
+    Fobos:
+        id: 'Fobos'
+        raio: 0.6
+        referencia: 'Marte'
+        velocidade: 17
+
+    Deimos:
+        id: 'Deimos'
+        raio: 0.2
+        referencia: 'Marte'
+        velocidade: 20
+
+   
+
+    
+
+
+
+        
+    
+
+
+    
