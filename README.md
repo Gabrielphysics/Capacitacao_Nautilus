@@ -1,6 +1,10 @@
 # Aula_Nautilus_GIT
 * Entregável da aula de git. Criar repositório remoto e executar clone no repositório local.
 
+&nbsp;
+
+&nbsp;
+
 # Aula_Nautilus_Python
 
 * ## Entregável da aula de python.
@@ -21,6 +25,10 @@
     4. ### "Dê a soma de todos os números primos menores que 1000."
 
         Utilizando uma função já citada **Listar_Divisores_Primos** executei a função soma (sum()) para somar todos os números primos encontrados, já que como retorno esta função me dá uma lista com todos os números primos encontrados.   
+
+&nbsp;
+
+&nbsp;
 
 # Aula_Nautilus_Python_POO
     
@@ -71,6 +79,10 @@
             
             Acrescenta um novo objeto **VeiculoAutonomo** na lista **veiculos_registrados**.
 
+&nbsp;
+
+&nbsp;
+
 # Aula_Nautilus_ROS_Basico
 
 * ## Entregável da aula de ROS básico.
@@ -88,4 +100,30 @@
             $$
             * Utilizei a biblioteca math para efetuar a operação.
             * O código publica o valor em formato Float64 em dois tópicos diferentes, a saber "modulo_angular" e "modulo_linear".
+
+&nbsp;
+
+&nbsp;
+
+# Aula_Nautilus_ROS_Avançado
+
+* ## Entregável da aula de ROS Avançado.
+
+    1. ### "Implemente um modelo de sistema solar simples usando TF."
+        * ### Arquivo **solar_system.yaml**
+            Responsável por determinar os corpos existentes, os quais possuem as seguintes propriedades:
+
+            1.  id: (Nome do corpo)
+            2.  raio: (distância entre o corpo e a origem)
+            3.  referência: (id do corpo no qual está orbitando)
+            4.  velocidade: (velocidade relativa ao ano terrestre)
+
+        * ### Arquivo **TimeSpace.py**
+
+            Responsável por coletar os parâmetros de cada corpo e movimentá-los em órbita respeitando os atributos de cada um. Caso um corpo não possua referência, este permanecerá em sua inércia.
+        
+        * ### Arquivo **system.launch**
+
+            Responsável por inicializar os processos de servidor de parâmetros e nós.
+
 
